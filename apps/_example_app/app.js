@@ -10,3 +10,5 @@ Bangle.on('lcdPower', (on) => {
 
 g.clear();
 // call your app function here
+
+//
