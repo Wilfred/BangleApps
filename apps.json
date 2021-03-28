@@ -3041,5 +3041,18 @@
       "evaluate": true
     }
   ]
+},
+{ "id": "widdate",
+  "name": "Date and Day Of Week Widget",
+  "shortName":"Date Widget",
+  "icon": "widget.png",
+  "version":"0.01",
+  "description": "Displays the month, day and day of week",
+  "tags": "widget",
+  "type": "widget",
+  "readme": "README.md",
+  "storage": [
+    {"name":"widdate.wid.js","url":"widget.js"}
+  ]
 }
 ]
