@@ -100,6 +100,13 @@ function draw_clock(){
   }
 
   g.flip();
+  
+  g.setColor(0,0,1);
+  
+  var d = new Date();
+  d.setHours((d.getHours() + 8) % 24);
+  g.drawString("LON " + d.getHours() + ":" + d.getMinutes(), 120, 180);
+  
   //console.log(date);
 }
 function clearTimers(){
