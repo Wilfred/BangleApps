@@ -104,8 +104,12 @@ function draw_clock(){
   g.setColor(0,0,1);
   
   var d = new Date();
-  d.setHours((d.getHours() + 8) % 24);
-  g.drawString("LON " + d.getHours() + ":" + d.getMinutes(), 120, 180);
+  var hours = (d.getHours() + 8) % 24;
+  var mins = d.getMinutes();
+  var timeStr = `${hours}:${mins < 10 ? '0' : ''}${mins}${hours < 12 ? "am" : "pm"}`;
+  
+  g.setFont("Vector12", 25);
+  g.drawString(timeStr + "\n LON ", 125, 160);
   
   //console.log(date);
 }
