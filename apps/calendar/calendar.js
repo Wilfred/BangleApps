@@ -1,6 +1,6 @@
 const maxX = 240;
 const maxY = 240;
-const rowN = 7;
+const rowN = 6;
 const colN = 7;
 const headerH = maxY / 7;
 const rowH = (maxY - headerH) / rowN;
@@ -20,7 +20,7 @@ const red = "#d41706";
 function drawCalendar(date) {
   g.setBgColor(color4);
   g.clearRect(0, 0, maxX, maxY);
-  g.setBgColor(color1);
+  g.setBgColor(black);
   g.clearRect(0, 0, maxX, headerH);
   g.setBgColor(color2);
   g.clearRect(0, headerH, maxX, headerH + rowH);
@@ -109,7 +109,7 @@ function drawCalendar(date) {
       const isToday =
         today.year === year && today.month === month && today.day === day - 50;
       if (isToday) {
-        g.setColor(red);
+        g.setColor(black);
         g.drawRect(
           x * colW,
           y * rowH + headerH + rowH,
