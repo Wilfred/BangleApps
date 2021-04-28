@@ -104,6 +104,7 @@ function draw_clock(){
   g.setColor(0.7, 0.7, 1);
   
   var d = new Date();
+  var hours = (d.getHours() + 8) % 24;
   var mins = d.getMinutes();
   var timeStr = `${hours % 12}:${mins < 10 ? '0' : ''}${mins}${hours < 12 ? "am" : "pm"}`;
   
