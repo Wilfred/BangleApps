@@ -1048,7 +1048,7 @@
   { "id": "boldclk",
     "name": "Bold Clock",
     "icon": "bold_clock.png",
-    "version":"0.03",
+    "version":"0.06",
     "description": "Simple, readable and practical clock",
     "tags": "clock",
     "type":"clock",
@@ -1772,7 +1772,7 @@
   { "id": "calendar",
     "name": "Calendar",
     "icon": "calendar.png",
-    "version": "0.01",
+    "version": "0.02",
     "description": "Simple calendar",
     "tags": "calendar",
     "readme": "README.md",
@@ -3040,6 +3040,19 @@
       "url": "battleship-icon.js",
       "evaluate": true
     }
+  ]
+},
+{ "id": "widdate",
+  "name": "Date and Day Of Week Widget",
+  "shortName":"Date Widget",
+  "icon": "widget.png",
+  "version":"0.01",
+  "description": "Displays the month, day and day of week",
+  "tags": "widget",
+  "type": "widget",
+  "readme": "README.md",
+  "storage": [
+    {"name":"widdate.wid.js","url":"widget.js"}
   ]
 }
 ]
